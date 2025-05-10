@@ -10,11 +10,11 @@ function pertenceAFibonacci(numero) {
 }
 
 // Solicitar ao usuário que informe um número
-let numero = parseInt(prompt("Informe um número: "));
+let numeroInformado = parseInt(prompt("Informe um número: "));
 
 // Verificar se o número pertence à sequência de Fibonacci
-if (pertenceAFibonacci(numero)) {
-  alert('O número ${numero} pertence à sequência de Fibonacci.');
+if (pertenceAFibonacci(numeroInformado)) {
+  alert(`O número ${numeroInformado} pertence à sequência de Fibonacci.`);
 } else {
-  alert('O número ${numero} NÃO pertence à sequência de Fibonacci.');
+  alert(`O número ${numeroInformado} NÃO pertence à sequência de Fibonacci.`);
 }

@@ -135,9 +135,9 @@ function analisarFaturamento(dados) {
 
     const diasAcimaDaMedia = valores.filter(v => v > media).length;
 
-    console.log('Menor faturamento: R$ ${menor.toFixed(2)}');
-    console.log('Maior faturamento: R$ ${maior.toFixed(2)}');
-    console.log('Dias com faturamento acima da média: ${diasAcimaDaMedia}');
+    console.log(`Menor faturamento: R$ ${resultado.menorFaturamento.toFixed(2)}`);
+    console.log(`Maior faturamento: R$ ${resultado.maiorFaturamento.toFixed(2)}`);
+    console.log(`Dias acima da média: ${resultado.diasAcimaDaMedia}`);
 }
 
 analisarFaturamento(faturamentoMensal);

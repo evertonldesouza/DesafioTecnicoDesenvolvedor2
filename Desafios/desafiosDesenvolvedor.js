@@ -24,9 +24,9 @@ let numero = parseInt(prompt("Informe um número: "));
 
 // Verificar se o número pertence à sequência de Fibonacci
 if (pertenceAFibonacci(numero)) {
-    alert('O número ${numero} pertence à sequência de Fibonacci.');
+    alert(`O número ${numero} pertence à sequência de Fibonacci.`);
 } else {
-    alert('O número ${numero} NÃO pertence à sequência de Fibonacci.');
+    alert(`O número ${numero} NÃO pertence à sequência de Fibonacci.`);
 }
 
 
@@ -167,9 +167,9 @@ function analisarFaturamento(dados) {
 
     const diasAcimaDaMedia = valores.filter(v => v > media).length;
 
-    console.log('Menor faturamento: R$ ${menor.toFixed(2)}');
-    console.log('Maior faturamento: R$ ${maior.toFixed(2)}');
-    console.log('Dias com faturamento acima da média: ${diasAcimaDaMedia}');
+    console.log(`Menor faturamento: R$ ${menor.toFixed(2)}`);
+    console.log(`Maior faturamento: R$ ${maior.toFixed(2)}`);
+    console.log(`Dias com faturamento acima da média: ${diasAcimaDaMedia}`);
 }
 
 analisarFaturamento(faturamentoMensal);
